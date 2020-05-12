@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 , shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Login</title>
+    <script defer src="login.js"></script>
+</head>
+
+<body>
+    <!-------------------------------------------------- NAVBAR -------------------------------------------------->
+    <nav class="nav navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand logo" href="homepage.html">
+                <img src="img/logo.png" height="35px" alt="bootstrap-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Products
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item a-hover" href="#">Products type 1</a>
+                            <a class="dropdown-item a-hover" href="#">Products type 2</a>
+                            <a class="dropdown-item a-hover" href="#">Products type 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Log in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cart(0)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-------------------------------------------------- LOGIN & REGISTER BOX -------------------------------------------------->
+    <div class="container my-auto login">
+        <div class="row justify-content-center vert-rule">
+            <div class="col-10 col-md-5 col-lg-4 justify-content-center login-box">
+                <div>
+                    <h4 class="login-labels">Have an account?</h4>
+                    <form>
+                        <div class="form-group">
+                            <label class="login-labels">Email address</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="login-labels">Password</label>
+                            <input type="password" class="form-control">
+                        </div>
+                        <button type="submit" class="btn d-flex justify-content-center mx-auto w-100 contact-submit">Log
+                            in</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-10 d-md-none d-flex justify-content-center">
+                <hr class="divider">
+            </div>
+
+            <div class="col-10 col-md-5 col-lg-4 justify-content-center register-box">
+                <div>
+                    <h4 class="login-labels">New to our website?</h4>
+                    <form id="reg-form">
+                        <div class="form-group">
+                            <label class="login-labels" for="reg-email">Email address</label>
+                            <input type="text" class="form-control" id="reg-email" name="reg-email">
+                            <small id="reg-email-err" class="text-danger"></small>
+                        </div>
+                        <div class="form-group">
+                            <label class="login-labels" for="reg-password">Password</label>
+                            <input type="password" class="form-control" id="reg-password" name="reg-password">
+                            <small id="reg-pass-err" class="text-danger"></small>
+                        </div>
+                        <div class="form-group">
+                            <label class="login-labels" for="repeat-password">Repeat password</label>
+                            <input type="password" class="form-control" id="rep-password" name="rep-password">
+                            <small id="repeat-pass-err" class="text-danger"></small>
+                        </div>
+                        <div class="form-group">
+                            <select id="select-province" class="form-control ">
+                                <option value="0">Select your province</option>
+                                <option>Barcelona</option>
+                                <option>Girona</option>
+                                <option>Lleida</option>
+                                <option>Tarragona</option>
+                            </select>
+                            <small id="select-province-err" class="text-danger"></small>
+                        </div>
+                        <button id="submit" type="submit"
+                            class="btn d-flex justify-content-center mx-auto w-100 contact-submit">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------- FOOTER -------------------------------------------------->
+    <footer class="footer">
+        <div class="container">
+            <div class="row pt-3">
+                <div class="col footer-menu d-flex justify-content-center">
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" class="youtube"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col footer-menu d-flex justify-content-center">
+                    <ul class="list-unstyled ">
+                        <li><a class="footer-content a-hover" href="#">FAQ</a></li>
+                        <li><a class="footer-content a-hover" href="#">Terms & conditions</a></li>
+                        <li><a class="footer-content a-hover" href="#">Return policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <small class="d-flex justify-content-center py-2 footer-content">©2020 generic logo company, All Rights
+                Reserved</small>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/3bc29e9d3f.js" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

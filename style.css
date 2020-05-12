@@ -1,0 +1,222 @@
+
+/************************************************** GENERAL **************************************************/
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    background-color: #ffffe0;
+    padding-top: 61px;
+    font-size: 1rem;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+nav, footer {
+    background-color: #87cefa;
+}
+
+.divider {
+    width: 90%;
+    margin: 2rem 0 2rem 0;
+}
+
+.section-header {
+    color: #808080;
+}
+
+.facebook, .facebook:hover {
+    color: #4267b2;
+}
+
+.twitter, .twitter:hover {
+    color: #1da1f2;
+}
+
+.youtube, .youtube:hover {
+    color: #ff0000;
+}
+
+/* Use only if there is little (vertically uncentered) content on the page and you need the footer to stay at the bottom, rest of the needed CSS is already in place */
+
+/* .footer {
+    margin-top: auto;
+} */
+
+.footer-content {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.a-hover:hover {
+    color: rgba(0, 0, 0, 0.7);
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.copyright {
+    background-color: #a9a9a9;
+}
+
+/************************************************** HOMEPAGE **************************************************/
+
+.dropdown-menu {
+    background-color: #87cefa;
+    min-width: 0;
+}
+
+.dropdown-item {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-item:hover {
+    background-color: #87cefa;
+}
+
+.carousel-caption {
+    background-color: rgba(128, 128, 128, 0.7);
+    right: auto;
+    position: absolute;
+    bottom: 40px;
+    left: 15%;
+    z-index: 10;
+    padding: 20px;
+    text-align: left;
+}
+
+.carousel-text {
+    color: #ffffff;
+}
+
+.shop-button {
+    font-size: 2rem;
+    color: #ffd700;
+}
+
+.shop-button:hover {
+    color: #daa520;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.about-divider {
+    width: 20%;
+}
+
+.about-img {
+    border-radius: 0.25rem;
+}
+
+.about-intro {
+    font-size: 2rem;
+    margin-bottom: 0;
+    padding-right: 8px;
+    border-right: 5px solid #a9a9a9;
+}
+
+.about {
+    color: #a9a9a9;
+}
+
+textarea {
+    resize: none;
+}
+
+.contact-submit {
+    background-color: #ffd700;
+    color: #ffffff;
+}
+
+.contact-submit:hover {
+    color: #ffffff;
+    background-color: #daa520;
+}
+
+/************************************************** PRODUCTS **************************************************/
+
+.products-descr {
+    color: #a9a9a9;
+    margin-bottom: 0;
+}
+
+.product-h5 {
+    margin-bottom: 0;
+}
+
+.product-name {
+    color: #808080;
+    text-decoration: none;
+}
+
+.product-name:hover {
+    color: #808080;
+}
+
+.product-price {
+    color: #44a80a;
+    margin-bottom: 0;
+}
+
+/************************************************** LOGIN & REGISTER **************************************************/
+
+.vert-rule {
+    background: linear-gradient(#a9a9a9, #a9a9a9) no-repeat center/1px 100%;
+}
+
+.login-labels {
+    color: #808080;
+}
+
+.dropdown-province {
+    margin-bottom: 1rem;
+}
+
+/************************************************** MEDIA QUERY **************************************************/
+
+@media (min-width: 576px) {
+    .nav {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .vert-rule {
+        background: none;
+    }
+    .register-box {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .about-intro {
+        margin-top: 10px;
+    }
+    .contact-form {
+        margin-bottom: 1rem;
+    }
+    .location {
+        height: 400px;
+    }
+    .login-box {
+        border: none;
+    }
+    .register-box {
+        border: none;
+    }
+}
+
+@media (min-width: 992px) {
+    #carousel {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .carousel-inner {
+        border-radius: 0 0 0.25rem 0.25rem;
+    }
+}
